@@ -1,16 +1,26 @@
-<script setup lang="ts">
+<script setup lang='ts'>
+const textArray: string[] = []
+const topText = ref(textArray)
 
+topText.value = [
+  'ようこそ、本アンケートでみんなさんが好きなゲームに<br>「とうひょう」 してください。<br>ゲームにたのしんでね！<br>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト'
+]
 </script>
 
 <template>
   <div class="home">
     <section class="nes-container is-dark with-title">
       <h2 class="title font-numochi font-semibold">はじめ</h2>
+
       <p class="font-numochi font-bold text-2xl leading-[3rem]">
-        ようこそ、本アンケートでみんなさんが好きなゲームに 「とうひょう」 してください。<br>
-        ゲームにたのしんでね！<br>
-        テキストテキストテキストテキストテキストテキスト<br>
-        テキストテキストテキストテキストテキストテキスト
+        <vuetyped
+          :strings="topText"
+          :smart-backspace="true"
+          :showCursor="false"
+          :typeSpeed="20"
+        >
+          <div class="typing" />
+        </vuetyped>
       </p>
     </section>
 
