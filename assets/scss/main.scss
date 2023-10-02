@@ -9,6 +9,18 @@ html, body, pre, code, kbd, samp {
   font-family: 'Press Start 2P';
 }
 
-// .text-numochi {
-//   font-family: 'Numochi'
-// }
+.typewritter {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(24);
+  -webkit-animation: typing 2s steps(24);
+}
+
+@keyframes cursor {
+  50% { border-color: transparent }
+}
+
+@keyframes typing {
+  from { width: 0 }
+}
