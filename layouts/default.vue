@@ -3,7 +3,8 @@
 </script>
 
 <template>
-  <main>
+  <main class="w-10/12 mx-auto">
+    <Header />
     <slot />
   </main>
 </template>
