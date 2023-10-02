@@ -5,12 +5,6 @@ export default defineNuxtConfig({
     '@/assets/css/tailwind.css',
     '@/assets/scss/main.scss'
   ],
-  googleFonts: {
-    googleFonts: {
-      preload: true,
-      useStylesheet: true
-    }
-  },
   modules: [
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',

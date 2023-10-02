@@ -12,15 +12,8 @@ topText.value = [
     <section class="nes-container is-dark with-title">
       <h2 class="title font-numochi font-semibold">はじめ</h2>
 
-      <p class="font-numochi font-bold text-2xl leading-[3rem]">
-        <vuetyped
-          :strings="topText"
-          :smart-backspace="true"
-          :showCursor="false"
-          :typeSpeed="20"
-        >
-          <div class="typing" />
-        </vuetyped>
+      <p class="typewritter font-numochi font-bold text-2xl leading-[3rem]">
+        ようこそ、本アンケートでみんなさんが好きなゲームに<br>「とうひょう」 してください。<br>ゲームにたのしんでね！<br>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト
       </p>
     </section>
 
