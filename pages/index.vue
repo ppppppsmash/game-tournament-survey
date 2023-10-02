@@ -4,6 +4,9 @@
 
 <template>
   <div>
-    <h1 class="text-red-500">トップ</h1>
+    <section class="nes-container is-dark with-title">
+      <h2 class="title">トップ</h2>
+      <span class="nes-text is-primary">Primary</span>
+    </section>
   </div>
 </template>
