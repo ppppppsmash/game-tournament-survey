@@ -5,13 +5,22 @@ export default defineNuxtConfig({
     '@/assets/css/tailwind.css',
     '@/assets/scss/main.scss'
   ],
-  build: {
+  googleFonts: {
+    googleFonts: {
+      preload: true,
+      useStylesheet: true
+    }
   },
   modules: [
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
     'nuxt-icon',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-fonts', {
+      families: {
+        'Press+Start+2P': true,
+      }
+    }]
   ],
   runtimeConfig: {
     public: {

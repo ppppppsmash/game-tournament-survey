@@ -9,7 +9,11 @@ export default {
     './app.vue',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        numochi: ['Numochi']
+      }
+    },
   },
   plugins: [],
 }
