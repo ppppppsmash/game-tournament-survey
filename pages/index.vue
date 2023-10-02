@@ -12,16 +12,18 @@ topText.value = [
     <section class="nes-container is-dark with-title">
       <h2 class="title font-numochi font-semibold">はじめ</h2>
 
-      <p class="font-numochi font-bold text-2xl leading-[3rem]">
-        <vuetyped
-          :strings="topText"
-          :smart-backspace="true"
-          :showCursor="false"
-          :typeSpeed="20"
-        >
-          <div class="typing" />
-        </vuetyped>
-      </p>
+      <client-only>
+        <p class="font-numochi font-bold text-2xl leading-[3rem]">
+          <vuetyped
+            :strings="topText"
+            :smart-backspace="true"
+            :showCursor="false"
+            :typeSpeed="20"
+          >
+            <div class="typing" />
+          </vuetyped>
+        </p>
+      </client-only>
     </section>
 
     <div class="w-full text-center mt-10">

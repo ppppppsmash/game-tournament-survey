@@ -1,4 +1,3 @@
-import { defineNuxtPlugin } from '#app'
 import VueTyped from 'vue3typed'
 
 export default defineNuxtPlugin((nuxtApp) => {
