@@ -4,16 +4,12 @@ definePageMeta({
     name: 'expand'
   }
 })
-
-const goToHome = () => {
-  return navigateTo('/')
-}
 </script>
 
 <template>
   <div class="second">
     <Header addClass="text-white" />
-    <div class="overflow-x-scroll h-[80vh]">
+    <div class="h-[80vh]">
       <section class="nes-container with-title is-dark">
         <h2 class="title font-numochi font-semibold">しつもん</h2>
 
@@ -23,11 +19,12 @@ const goToHome = () => {
     </div>
   </div>
 
-  <div class="layer bg-[#212529] absolute w-full h-full top-0 left-0 -z-10" />
+  <div class="layer bg-[#212529] absolute w-full h-[140vh] top-0 left-0 -z-50" />
 </template>
 
 <style scoped lang="scss">
 .second {
+  position: relative;
   opacity: 0;
   animation: fadeInUp 0.8s 1s ease-in-out forwards;
 }
