@@ -8,19 +8,17 @@ definePageMeta({
 
 <template>
   <div class="second">
-    <Header />
-    <div>
+    <Header addClass="text-white" />
+    <div class="overflow-x-scroll h-[80vh]">
       <section class="nes-container with-title is-dark">
         <h2 class="title font-numochi font-semibold">しつもん</h2>
 
-        <p class="typewritter font-numochi font-bold text-2xl leading-[3rem]">
-          Hello World
-        </p>
+        <Form />
       </section>
     </div>
   </div>
 
-  <div class="layer bg-black absolute w-full h-full top-0 left-0 -z-10" />
+  <div class="layer bg-[#212529] absolute w-full h-full top-0 left-0 -z-10" />
 </template>
 
 <style scoped lang="scss">
