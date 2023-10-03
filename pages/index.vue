@@ -19,13 +19,21 @@ const goToQuestion = () => {
 
 <template>
   <div class="home">
-    <Header />
+    <Header addClass="text-black" />
+
+    <div class="flex justify-end mb-1 gap-x-4">
+      <DotCharacterA />
+      <DotCharacterB />
+      <DotCharacterC />
+    </div>
     <div>
       <section class="nes-container with-title">
         <h2 class="title font-numochi font-semibold">はじめ</h2>
 
         <p class="typewritter font-numochi font-bold text-2xl leading-[3rem]">
-          ようこそ、本アンケートでみんなさんが好きなゲームに<br>「とうひょう」 してください。<br>ゲームにたのしんでね！<br>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト
+          11月10日 or 17日に<br>開催予定であるデジタルゲーム会のためのアンケートとなります。<br>
+          <br>
+          日程の決定と参加意向アンケートにつきましては、<br>また後日ご用意いたします。
         </p>
       </section>
 
@@ -45,8 +53,6 @@ const goToQuestion = () => {
 
 <style lang="scss">
 .home {
-  // width: 100vw;
-  // height: 100vh;
   position: relative;
 }
 
@@ -70,7 +76,7 @@ const goToQuestion = () => {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #000;
+    background: #212529;
     z-index: -1;
   }
 }

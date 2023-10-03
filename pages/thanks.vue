@@ -1,30 +1,27 @@
-<script setup lang='ts'>
+<script setup>
 definePageMeta({
   pageTransition: {
-    name: 'expand'
+    name: 'reduction'
   }
 })
 </script>
 
 <template>
-  <div class="second">
-    <Header addClass="text-white" />
-    <div class="h-[80vh]">
-      <section class="nes-container with-title is-dark">
-        <h2 class="title font-numochi font-semibold">しつもん</h2>
-
-        <Form />
-
-      </section>
+  <div class="thanks">
+    <div class="nes-container is-rounded !h-[95vh]">
+      <p class="font-numochi nes-balloon from-left nes-pointer">
+        ご送信いただきありがとうございました！
+      </p>
+      <DotCharacterA />
     </div>
   </div>
 
-  <div class="layer bg-[#212529] absolute w-full h-[140vh] top-0 left-0 -z-50" />
+  <div class="layer bg-white absolute w-full h-full top-0 left-0 -z-10" />
+  
 </template>
 
-<style scoped lang="scss">
-.second {
-  position: relative;
+<style lang="scss">
+.thanks {
   opacity: 0;
   animation: fadeInUp 0.8s 1s ease-in-out forwards;
 }
@@ -53,4 +50,5 @@ definePageMeta({
     opacity: 1;
   }
 }
+
 </style>
