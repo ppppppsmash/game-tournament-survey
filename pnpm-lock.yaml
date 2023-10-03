@@ -38,6 +38,9 @@ dependencies:
   postcss:
     specifier: ^8.4.31
     version: 8.4.31
+  ress:
+    specifier: ^5.0.2
+    version: 5.0.2
   rollup-plugin-typescript2:
     specifier: ^0.36.0
     version: 0.36.0(rollup@3.29.4)(typescript@5.2.2)
@@ -5937,6 +5940,10 @@ packages:
       is-core-module: 2.13.0
       path-parse: 1.0.7
       supports-preserve-symlinks-flag: 1.0.0
+
+  /ress@5.0.2:
+    resolution: {integrity: sha512-oHBtOWo/Uc8SzQMbQNIKTcgi8wKmAs7IlNlRywmXudbOtF+c27FlOIq7tnwLDVcTywe6JXYo1pDXHO6kABwNYA==}
+    dev: false
 
   /retry@0.12.0:
     resolution: {integrity: sha512-9LkiTwjUh6rT555DtE9rTX+BKByPfrMzEAtnlEtdEwr3Nkffwiihqe2bWADg+OQRjt9gl6ICdmB/ZFDCGAtSow==}
