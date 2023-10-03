@@ -4,6 +4,10 @@ definePageMeta({
     name: 'expand'
   }
 })
+
+const goToHome = () => {
+  return navigateTo('/')
+}
 </script>
 
 <template>
@@ -14,6 +18,7 @@ definePageMeta({
         <h2 class="title font-numochi font-semibold">しつもん</h2>
 
         <Form />
+
       </section>
     </div>
   </div>

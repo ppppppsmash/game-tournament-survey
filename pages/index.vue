@@ -20,6 +20,12 @@ const goToQuestion = () => {
 <template>
   <div class="home">
     <Header addClass="text-black" />
+
+    <div class="flex justify-end mb-1 gap-x-4">
+      <DotCharacterA />
+      <DotCharacterB />
+      <DotCharacterC />
+    </div>
     <div>
       <section class="nes-container with-title">
         <h2 class="title font-numochi font-semibold">はじめ</h2>
