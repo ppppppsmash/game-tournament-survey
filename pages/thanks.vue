@@ -14,51 +14,67 @@ definePageMeta({
     <div class="flex mb-2 ml-2 gap-x-6">
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 1s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 1.4s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 1.6s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 1.8s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 2s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 2.2s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 2.4s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 2.6s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 2.8s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 3s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 3.2s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 3.4s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 3.6s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 3.8s"
       />
       <DotCharacterB
         addClass="block w-20 character-action"
+        style="animationDelay: 4.0s"
       />
       <DotCharacterC
         addClass="block w-20 character-action"
+        style="animationDelay: 4.2s"
       />
     </div>
 
