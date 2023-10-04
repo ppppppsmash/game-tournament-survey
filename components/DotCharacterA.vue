@@ -1,9 +1,10 @@
 <script setup>
-
+const props = defineProps(['addClass'])
+const { addClass } = toRefs(props)
 </script>
 
 <template>
-  <div>
+  <div :class="addClass">
     <div class="dotA bound-fly"></div>
   </div>
 </template>

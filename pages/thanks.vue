@@ -8,12 +8,16 @@ definePageMeta({
 
 <template>
   <div class="thanks">
-    <div class="nes-container is-rounded !h-[95vh]">
-      <p class="font-numochi nes-balloon from-left nes-pointer">
-        ご回答いただきありがとうございます！<br>
-        参加希望については、後日案内いたします。
-      </p>
-      <DotCharacterA />
+    <div class="nes-container is-rounded !h-[99vh]">
+      <div class="h-full w-full flex flex-col justify-center items-center">
+        <p class="font-numochi nes-balloon from-left nes-pointer w-1/4">
+          ご回答いただきありがとうございます！<br>
+          参加希望については、後日案内いたします。
+        </p>
+        <DotCharacterA
+          addClass="block w-20 mr-[380px]"
+        />
+      </div>
     </div>
   </div>
 
