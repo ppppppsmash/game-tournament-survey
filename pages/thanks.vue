@@ -11,7 +11,58 @@ definePageMeta({
 <template>
   <div class="thanks">
     <Cracker />
-    <div class="nes-container is-rounded !h-[99vh]">
+    <div class="flex mb-2 ml-2 gap-x-6">
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterB
+        addClass="block w-20 character-action"
+      />
+      <DotCharacterC
+        addClass="block w-20 character-action"
+      />
+    </div>
+
+    <div class="nes-container is-rounded !h-[90vh]">
       <div class="h-full w-full flex flex-col justify-center items-center">
         <p class="font-numochi nes-balloon from-left nes-pointer w-1/4">
           ご回答いただきありがとうございます！<br>
@@ -31,7 +82,7 @@ definePageMeta({
 <style lang="scss">
 .thanks {
   opacity: 0;
-  animation: fadeInUp 0.8s 1s ease-in-out forwards;
+  animation: fadeInUp 1s 1s ease-in-out forwards;
 }
 
 .layer {
@@ -56,6 +107,21 @@ definePageMeta({
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+.character-action {
+  animation: come-down-anim 1s 2s linear 1;
+  z-index: 9999;
+}
+
+@keyframes come-down-anim {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1400px);
   }
 }
 </style>
