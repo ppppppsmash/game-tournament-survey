@@ -1,13 +1,16 @@
 <script setup>
+
 definePageMeta({
   pageTransition: {
     name: 'reduction'
   }
 })
+
 </script>
 
 <template>
   <div class="thanks">
+    <Cracker />
     <div class="nes-container is-rounded !h-[99vh]">
       <div class="h-full w-full flex flex-col justify-center items-center">
         <p class="font-numochi nes-balloon from-left nes-pointer w-1/4">
@@ -22,7 +25,7 @@ definePageMeta({
   </div>
 
   <div class="layer bg-white absolute w-full h-full top-0 left-0 -z-10" />
-  
+
 </template>
 
 <style lang="scss">
@@ -55,5 +58,4 @@ definePageMeta({
     opacity: 1;
   }
 }
-
 </style>
