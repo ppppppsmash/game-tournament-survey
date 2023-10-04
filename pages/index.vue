@@ -5,13 +5,6 @@ definePageMeta({
   }
 })
 
-const textArray: string[] = []
-const topText = ref(textArray)
-
-topText.value = [
-  'ようこそ、本アンケートでみんなさんが好きなゲームに<br>「とうひょう」 してください。<br>ゲームにたのしんでね！<br>テキストテキストテキストテキスト<br>テキストテキストテキストテキスト'
-]
-
 const goToQuestion = () => {
   return navigateTo('/second')
 }
