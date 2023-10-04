@@ -19,7 +19,7 @@ definePageMeta({
     </div>
   </div>
 
-  <div class="layer bg-[#212529] absolute w-full h-[140vh] top-0 left-0 -z-50" />
+  <div class="layer bg-[#212529] absolute w-full h-[160vh] top-0 left-0 -z-50" />
 </template>
 
 <style scoped lang="scss">

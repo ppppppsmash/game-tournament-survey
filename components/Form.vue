@@ -1,7 +1,9 @@
 <script setup>
-let isChange = ref(false)
+const isChange = ref(false)
+const isEnabled = ref(true)
+const isChecked = ref(false) 
 
-let form = ref({
+const form = ref({
   name: '',
   date: '',
   game_like: [],
@@ -11,22 +13,24 @@ let form = ref({
   game_hope_have: ''
 })
 
+//isEnabled.value = form.value.name !== '' ? false : true
+
 const submitHandler = async () => {
   isChange.value = true
 
   const formData = new FormData()
 
-  formData.append('entry.1905285273', form.value.name)
-  formData.append('entry.1233035774', form.value.date)
+  formData.append('entry.1905285273', form.value.name) //entry.1180101259
+  formData.append('entry.1233035774', form.value.date) //entry.1484807676
   form.value.game_like.forEach((val) => {
-    formData.append('entry.767589273', val)
+    formData.append('entry.767589273', val) //entry.204047520
   })
-  formData.append('entry.686286271', form.value.game_have)
+  formData.append('entry.686286271', form.value.game_have) //entry.1395366799
   form.value.game_support.forEach((val) => {
-    formData.append('entry.1613505963', val)
+    formData.append('entry.1613505963', val) //entry.1944240471
   })
-  formData.append('entry.95722905', form.value.game_support_other)
-  formData.append('entry.342755913', form.value.game_hope_have)
+  formData.append('entry.95722905', form.value.game_support_other) //entry.
+  formData.append('entry.342755913', form.value.game_hope_have) //entry.50802869
 
 
   const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNspdHb5MxhuJSv2DPuudEXfNbicrpKL6pdv8gP_IMOKId1A/formResponse'
@@ -39,9 +43,16 @@ const submitHandler = async () => {
     })
   )
 
-  //router.push('/thanks')
   return navigateTo('/thanks')
 }
+
+watchEffect(() => {
+  isEnabled.value = form.value.name === '' ? true : false
+  
+  if (!isChecked.value) {
+    form.value.game_support_other = ''
+  }
+})
 </script>
 
 <template>
@@ -53,12 +64,14 @@ const submitHandler = async () => {
           class="text-white font-numochi text-xl font-semibold mb-6"
         >
           ・お名前を教えてね
+          <span class="text-red-500">(必須)</span>
         </label>
 
         <input
           type="text"
           id="name_field"
           class="nes-input is-dark font-numochi"
+          :class="[isEnabled ? 'is-error' : '']"
           name="entry.1905285273"
           v-model="form.name"
         />
@@ -252,14 +265,17 @@ const submitHandler = async () => {
           <input
             type="checkbox"
             class="nes-checkbox is-dark"
+            v-model="isChecked"
           />
           <span class="font-numochi font-semibold">その他:</span>
           <input
             type="text"
             id="game_support_other_field"
-            class="nes-input is-dark font-numochi"
+            class="nes-input is-dark font-numochi transition duration-750"
+            :style="[isChecked ? '' : 'border: 4px gray dashed']"
             name="entry.95722905"
             v-model="form.game_support_other"
+            :disabled="!isChecked"
           />
         </label>
       </div>
@@ -284,9 +300,10 @@ const submitHandler = async () => {
       <div class="w-full text-center mt-10">
         <button
           type="submit"
-          class="nes-btn is-primary w-40 mx-auto font-numochi font-bold
+          class="nes-btn w-40 mx-auto font-numochi font-bold
             text-2xl reduction-btn"
-          :class="[isChange ? 'reduction-effect' : '']"
+          :class="[isChange ? 'reduction-effect' : ''], [isEnabled ? 'is-disabled' : 'is-primary']"
+          :disabled="isEnabled"
         >
           送信
         </button>

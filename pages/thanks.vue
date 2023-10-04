@@ -10,7 +10,8 @@ definePageMeta({
   <div class="thanks">
     <div class="nes-container is-rounded !h-[95vh]">
       <p class="font-numochi nes-balloon from-left nes-pointer">
-        ご送信いただきありがとうございました！
+        ご回答いただきありがとうございます！<br>
+        参加希望については、後日案内いたします。
       </p>
       <DotCharacterA />
     </div>
