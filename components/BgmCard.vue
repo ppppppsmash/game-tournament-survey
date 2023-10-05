@@ -23,8 +23,15 @@ const mutedHandler = () => {
     <p class="text-center">BGM</p>
     </div>
 
-      <audio preload="auto" autoplay loop :muted="isMuted">
-        <source src="/audio/bgm.ogg">
-      </audio>
+      <div v-if="isMuted">
+        <audio preload="auto" autoplay loop muted>
+          <source src="/audio/bgm.ogg">
+        </audio>
+      </div>
+      <div v-else>
+        <audio preload="auto" autoplay loop>
+          <source src="/audio/bgm.ogg">
+        </audio>
+      </div>
     </div>
 </template>
