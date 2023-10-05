@@ -22,7 +22,7 @@ const mutedHandler = () => {
       />
     <p class="text-center">BGM</p>
     </div>
-    <audio preload="auto" autoplay :muted="isMuted">
+    <audio preload="auto" autoplay loop :muted="isMuted">
       <source src="/audio/bgm.ogg">
     </audio>
   </div>

@@ -8,7 +8,6 @@ definePageMeta({
 
 <template>
   <div class="second">
-    <Header addClass="text-white" />
     <div class="h-[80vh]">
       <section class="nes-container with-title is-dark">
         <h2 class="title font-numochi font-semibold">しつもん</h2>

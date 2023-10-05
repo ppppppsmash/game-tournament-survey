@@ -7,7 +7,7 @@ const { addClass } = toRefs(props)
   <div class="my-6 relative mb-20">
     <NuxtLink to="/">
       <h1
-        class="text-2xl text-center"
+        class="text-3xl text-center title-style"
         :class="addClass"
       >
         
@@ -18,3 +18,11 @@ const { addClass } = toRefs(props)
     <BgmCard />
   </div>
 </template>
+
+<style lang="scss">
+.title-style {
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+</style>
