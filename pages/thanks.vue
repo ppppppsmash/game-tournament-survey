@@ -85,7 +85,7 @@ definePageMeta({
           参加希望については、後日案内いたします。
         </p>
         <DotCharacterA
-          addClass="block w-20 mr-[380px]"
+          addClass="block w-20 mr-[520px]"
         />
       </div>
     </div>

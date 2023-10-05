@@ -29,7 +29,7 @@ const submitHandler = async () => {
   form.value.game_support.forEach((val) => {
     formData.append('entry.1613505963', val) //entry.1944240471
   })
-  formData.append('entry.95722905', form.value.game_support_other) //entry.
+  formData.append('entry.95722905', form.value.game_support_other) //entry.1149156305
   formData.append('entry.342755913', form.value.game_hope_have) //entry.50802869
 
 
@@ -162,10 +162,10 @@ watchEffect(() => {
             type="checkbox"
             class="nes-checkbox is-dark"
             name="entry.767589273"
-            value="Vampire Survivors"
+            value="GIGA BASH"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">Vampire Survivors</span>
+          <span class="font-numochi font-semibold">GIGA BASH</span>
         </label>
 
         <label class="block">
