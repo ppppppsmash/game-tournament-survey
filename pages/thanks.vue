@@ -11,9 +11,9 @@ definePageMeta({
 <template>
   <div class="thanks">
     <Cracker />
-    <div class="flex mb-2 ml-2 gap-x-6">
+    <div class="flex justify-center mb-2 ml-2 gap-x-6">
       <DotCharacterB
-        addClass="block w-20 character-action"
+        addClass="block w-20 vertical-action mr-14"
         style="animationDelay: 1s"
       />
       <DotCharacterC
@@ -139,5 +139,16 @@ definePageMeta({
   100% {
     transform: translateY(1400px);
   }
+}
+
+@keyframes yoko {
+  to {
+    transform: translateX(100%);
+  }
+}
+.vertical-action {
+  z-index: 30000;
+  animation-timing-function: cubic-bezier(0.33, 0.66, 0.66, 1);
+  animation: yoko 0.8s linear alternate infinite;
 }
 </style>
