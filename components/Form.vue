@@ -13,8 +13,6 @@ const form = ref({
   game_hope_have: ''
 })
 
-//isEnabled.value = form.value.name !== '' ? false : true
-
 const submitHandler = async () => {
   isChange.value = true
 
@@ -113,7 +111,7 @@ watchEffect(() => {
           </label>
         </div>
 
-        <label class="block">
+        <label class="block relative">
           <input
             type="checkbox"
             class="nes-checkbox is-dark"
@@ -121,7 +119,11 @@ watchEffect(() => {
             value="マリオカート８ デラックス(Nintendo Switch)"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">マリオカート８ デラックス(Nintendo Switch)</span>
+          <span class="group font-numochi font-semibold">マリオカート８ デラックス(Nintendo Switch)
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/mariocart8.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -132,7 +134,11 @@ watchEffect(() => {
             value="大乱闘スマッシュブラザーズ SPECIAL(Nintendo Switch)"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">大乱闘スマッシュブラザーズ SPECIAL(Nintendo Switch)</span>
+          <span class="group font-numochi font-semibold">大乱闘スマッシュブラザーズ SPECIAL(Nintendo Switch)
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/smbro.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -143,7 +149,11 @@ watchEffect(() => {
             value="ぷよぷよ/テトリス"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">ぷよぷよ/テトリス</span>
+          <span class="group font-numochi font-semibold">ぷよぷよ/テトリス
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/puyoteto.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -154,7 +164,11 @@ watchEffect(() => {
             value="マリオパーティ"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">マリオパーティ</span>
+          <span class="group font-numochi font-semibold">マリオパーティ
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/marioparty.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -165,7 +179,11 @@ watchEffect(() => {
             value="GIGA BASH"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">GIGA BASH</span>
+          <span class="group font-numochi font-semibold">GIGA BASH
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/gigabash.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -176,7 +194,11 @@ watchEffect(() => {
             value="ボンバーマン"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">ボンバーマン</span>
+          <span class="group font-numochi font-semibold">ボンバーマン
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/bomberman.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -187,7 +209,11 @@ watchEffect(() => {
             value="ガンダムバーサス"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">ガンダムバーサス</span>
+          <span class="group font-numochi font-semibold">ガンダムバーサス
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/gundam.png" />
+            </div>
+          </span>
         </label>
       </div>
 
