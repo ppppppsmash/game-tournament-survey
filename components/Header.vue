@@ -4,7 +4,7 @@ const { addClass } = toRefs(props)
 </script>
 
 <template>
-  <div class="my-6">
+  <div class="my-6 relative mb-20">
     <NuxtLink to="/">
       <h1
         class="text-2xl text-center"
@@ -15,5 +15,6 @@ const { addClass } = toRefs(props)
         Webcrew's Gaming Tournament Survey
       </h1>
     </NuxtLink>
+    <BgmCard />
   </div>
 </template>
