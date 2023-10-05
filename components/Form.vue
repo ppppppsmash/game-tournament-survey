@@ -18,17 +18,17 @@ const submitHandler = async () => {
 
   const formData = new FormData()
 
-  formData.append('entry.1905285273', form.value.name) //entry.1180101259
-  formData.append('entry.1233035774', form.value.date) //entry.1484807676
+  formData.append('entry.1180101259', form.value.name)
+  formData.append('entry.1484807676', form.value.date)
   form.value.game_like.forEach((val) => {
-    formData.append('entry.767589273', val) //entry.204047520
+    formData.append('entry.204047520', val)
   })
-  formData.append('entry.686286271', form.value.game_have) //entry.1395366799
+  formData.append('entry.1395366799', form.value.game_have)
   form.value.game_support.forEach((val) => {
-    formData.append('entry.1613505963', val) //entry.1944240471
+    formData.append('entry.1944240471', val)
   })
-  formData.append('entry.95722905', form.value.game_support_other) //entry.1149156305
-  formData.append('entry.342755913', form.value.game_hope_have) //entry.50802869
+  formData.append('entry.1149156305', form.value.game_support_other)
+  formData.append('entry.50802869', form.value.game_hope_have)
 
 
   const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNspdHb5MxhuJSv2DPuudEXfNbicrpKL6pdv8gP_IMOKId1A/formResponse'
