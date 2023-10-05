@@ -82,7 +82,7 @@ $box-shadow2: ();
   height: 5px;
   border-radius: 50%;
   box-shadow: $box-shadow2;
-  @include animation((1s bang ease-out 4 backwards, 1s gravity ease-in 4 backwards, 5s position linear 4 backwards));
+  @include animation((1s bang ease-out 6 backwards, 1s gravity ease-in 6 backwards, 5s position linear 6 backwards));
 }
     
 .pyro > .after {
