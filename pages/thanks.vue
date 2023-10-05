@@ -17,7 +17,7 @@ definePageMeta({
         style="animationDelay: 1s"
       />
       <DotCharacterC
-        addClass="block w-20 character-action"
+        addClass="block w-20 animate-slide-out-elliptic-top-fwd"
         style="animationDelay: 1.4s"
       />
       <DotCharacterB
@@ -73,19 +73,38 @@ definePageMeta({
         style="animationDelay: 4.0s"
       />
       <DotCharacterC
-        addClass="block w-20 character-action"
-        style="animationDelay: 4.2s"
+        addClass="block w-20 animate-slide-out-elliptic-top-bck"
+        style="animationDelay: 1.4s"
       />
     </div>
 
-    <div class="nes-container is-rounded !h-[90vh]">
+    <div class="nes-container is-rounded !h-[80vh]">
       <div class="h-full w-full flex flex-col justify-center items-center">
-        <p class="font-numochi nes-balloon from-left nes-pointer w-1/4">
+        <p
+          class="font-numochi nes-balloon from-left nes-pointer w-1/4 animate-scale-in-center"
+          style="animationDelay: 5s"
+        >
           ご回答いただきありがとうございます！<br>
-          参加希望については、後日案内いたします。
+          さんかきぼう については、後日 あんない いたします。
         </p>
         <DotCharacterA
-          addClass="block w-20 mr-[520px]"
+          addClass="block w-20 mr-[520px] animate-bounce-in-left"
+          style="animationDelay: 4s"
+        />
+      </div>
+
+      <div class="flex justify-center ml-2 gap-x-6">
+        <DotCharacterB
+          addClass="block w-20 animate-slide-out-blurred-tr"
+          style="animationDelay: 2.6s"
+        />
+        <DotCharacterC
+          addClass="block w-20 animate-slide-out-blurred-top"
+          style="animationDelay: 2.4s"
+        />
+        <DotCharacterB
+          addClass="block w-20 animate-slide-out-blurred-tl"
+          style="animationDelay: 2.6s"
         />
       </div>
     </div>
@@ -138,6 +157,7 @@ definePageMeta({
   }
   100% {
     transform: translateY(1400px);
+    opacity: 0;
   }
 }
 

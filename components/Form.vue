@@ -61,8 +61,7 @@ watchEffect(() => {
           for="name_field"
           class="text-white font-numochi text-xl font-semibold mb-6"
         >
-          ・お名前を教えてね
-          <span class="text-red-500">(必須)</span>
+          <span class="text-red-500 text-sm">* </span>お名前を教えてね
         </label>
 
         <input
