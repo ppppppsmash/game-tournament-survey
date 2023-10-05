@@ -13,24 +13,22 @@ const form = ref({
   game_hope_have: ''
 })
 
-//isEnabled.value = form.value.name !== '' ? false : true
-
 const submitHandler = async () => {
   isChange.value = true
 
   const formData = new FormData()
 
-  formData.append('entry.1905285273', form.value.name) //entry.1180101259
-  formData.append('entry.1233035774', form.value.date) //entry.1484807676
+  formData.append('entry.1180101259', form.value.name)
+  formData.append('entry.1484807676', form.value.date)
   form.value.game_like.forEach((val) => {
-    formData.append('entry.767589273', val) //entry.204047520
+    formData.append('entry.204047520', val)
   })
-  formData.append('entry.686286271', form.value.game_have) //entry.1395366799
+  formData.append('entry.1395366799', form.value.game_have)
   form.value.game_support.forEach((val) => {
-    formData.append('entry.1613505963', val) //entry.1944240471
+    formData.append('entry.1944240471', val)
   })
-  formData.append('entry.95722905', form.value.game_support_other) //entry.
-  formData.append('entry.342755913', form.value.game_hope_have) //entry.50802869
+  formData.append('entry.1149156305', form.value.game_support_other)
+  formData.append('entry.50802869', form.value.game_hope_have)
 
 
   const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNspdHb5MxhuJSv2DPuudEXfNbicrpKL6pdv8gP_IMOKId1A/formResponse'
@@ -113,7 +111,7 @@ watchEffect(() => {
           </label>
         </div>
 
-        <label class="block">
+        <label class="block relative">
           <input
             type="checkbox"
             class="nes-checkbox is-dark"
@@ -121,7 +119,11 @@ watchEffect(() => {
             value="マリオカート８ デラックス(Nintendo Switch)"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">マリオカート８ デラックス(Nintendo Switch)</span>
+          <span class="group font-numochi font-semibold">マリオカート８ デラックス(Nintendo Switch)
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/mariocart8.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -132,7 +134,11 @@ watchEffect(() => {
             value="大乱闘スマッシュブラザーズ SPECIAL(Nintendo Switch)"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">大乱闘スマッシュブラザーズ SPECIAL(Nintendo Switch)</span>
+          <span class="group font-numochi font-semibold">大乱闘スマッシュブラザーズ SPECIAL(Nintendo Switch)
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/smbro.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -143,7 +149,11 @@ watchEffect(() => {
             value="ぷよぷよ/テトリス"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">ぷよぷよ/テトリス</span>
+          <span class="group font-numochi font-semibold">ぷよぷよ/テトリス
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/puyoteto.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -154,7 +164,11 @@ watchEffect(() => {
             value="マリオパーティ"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">マリオパーティ</span>
+          <span class="group font-numochi font-semibold">マリオパーティ
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/marioparty.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -162,10 +176,14 @@ watchEffect(() => {
             type="checkbox"
             class="nes-checkbox is-dark"
             name="entry.767589273"
-            value="Vampire Survivors"
+            value="GIGA BASH"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">Vampire Survivors</span>
+          <span class="group font-numochi font-semibold">GIGA BASH
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/gigabash.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -176,7 +194,11 @@ watchEffect(() => {
             value="ボンバーマン"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">ボンバーマン</span>
+          <span class="group font-numochi font-semibold">ボンバーマン
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/bomberman.png" />
+            </div>
+          </span>
         </label>
 
         <label class="block">
@@ -187,7 +209,11 @@ watchEffect(() => {
             value="ガンダムバーサス"
             v-model="form.game_like"
           />
-          <span class="font-numochi font-semibold">ガンダムバーサス</span>
+          <span class="group font-numochi font-semibold">ガンダムバーサス
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/gundam.png" />
+            </div>
+          </span>
         </label>
       </div>
 

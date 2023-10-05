@@ -12,8 +12,6 @@ const goToQuestion = () => {
 
 <template>
   <div class="home">
-    <Header addClass="text-black" />
-
     <div class="flex justify-end mb-1 gap-x-4">
       <DotCharacterA />
       <DotCharacterB />
