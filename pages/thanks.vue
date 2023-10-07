@@ -11,7 +11,7 @@ definePageMeta({
 <template>
   <div class="thanks">
     <Cracker />
-    <div class="flex justify-center mb-2 ml-2 gap-x-6">
+    <div class="sm:flex justify-center mb-2 ml-2 gap-x-6">
       <DotCharacterB
         addClass="block w-20 vertical-action mr-14"
         style="animationDelay: 1s"
