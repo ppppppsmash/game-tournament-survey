@@ -17,10 +17,10 @@ const mutedHandler = () => {
       @click="mutedHandler"
       >
       <i
-        class="nes-icon is-large star"
+        class="nes-icon is-medium star !w-2"
         :class="[isMuted ? 'is-transparent' : '']"
       />
-    <p class="text-center">BGM</p>
+    <p class="text-center text-xs sm:text-base">BGM</p>
     </div>
 
       <div v-if="isMuted">

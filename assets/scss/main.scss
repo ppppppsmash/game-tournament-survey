@@ -1,15 +1,25 @@
 @import '../../node_modules/nes.css/css/nes.css';
+@import "_mixin";
+
+$breakpoints: (
+  "sm": "screen and (min-width: 400px)",
+  "md": "screen and (min-width: 768px)",
+  "lg": "screen and (min-width: 1000px)",
+  "xl": "screen and (min-width: 1200px)",
+) !default;
 
 html, body, pre, code, kbd, samp {
   font-family: 'Press Start 2P';
 }
 
 .typewritter {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 2s steps(24);
-  -webkit-animation: typing 2s steps(24);
+  @include mq(sm) {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(24);
+    -webkit-animation: typing 2s steps(24);
+  }
 }
 
 @keyframes cursor {

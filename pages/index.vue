@@ -22,9 +22,9 @@ const goToQuestion = () => {
         <h2 class="title font-numochi font-semibold">はじめ</h2>
 
         <p class="typewritter font-numochi font-bold text-2xl leading-[3rem]">
-          11月10日 or 17日に<br>開催予定であるデジタルゲーム会のためのアンケートとなります。<br>
-          <br>
-          日程の決定と参加意向アンケートにつきましては、<br>また後日ご用意いたします。
+          11月10日 or 17日に<br class="hidden sm:block">開催予定であるデジタルゲーム会のためのアンケートとなります。<br>
+          <br class="hidden sm:block">
+          日程の決定と参加意向アンケートにつきましては、<br class="hidden sm:block">また後日ご用意いたします。
         </p>
       </section>
 

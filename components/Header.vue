@@ -7,7 +7,7 @@ const { addClass } = toRefs(props)
   <div class="my-6 relative mb-20">
     <NuxtLink to="/">
       <h1
-        class="text-3xl text-center title-style"
+        class="text-xl sm:text-3xl sm:text-center title-style"
         :class="addClass"
       >
         
