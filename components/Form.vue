@@ -54,7 +54,7 @@ watchEffect(() => {
 </script>
 
 <template>
-  <form class="form" @submit.prevent="submitHandler">
+  <form class="form text-sm sm:text-base" @submit.prevent="submitHandler">
     <div>
       <div class="nes-field mt-10 mb-14">
         <label
@@ -89,12 +89,12 @@ watchEffect(() => {
           <span class="font-numochi font-semibold">11/10(金)希望</span>
         </label>
 
-        <label class="ml-6">
+        <label class="sm:ml-6">
           <input type="radio" class="nes-radio is-dark" name="entry.1233035774" value="11/17(金)希望" v-model="form.date" />
           <span class="font-numochi font-semibold">11/17(金)希望</span>
         </label>
 
-        <label class="ml-6">
+        <label class="sm:ml-6">
           <input type="radio" class="nes-radio is-dark" name="entry.1233035774" value="どちらでもよい" v-model="form.date" />
           <span class="font-numochi font-semibold">どちらでもよい</span>
         </label>

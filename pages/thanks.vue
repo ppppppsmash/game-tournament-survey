@@ -1,5 +1,4 @@
-<script setup>
-
+<script setup lang="ts">
 definePageMeta({
   pageTransition: {
     name: 'reduction'
@@ -11,7 +10,7 @@ definePageMeta({
 <template>
   <div class="thanks">
     <Cracker />
-    <div class="flex justify-center mb-2 ml-2 gap-x-6">
+    <div class="hidden sm:flex justify-center mb-2 ml-2 gap-x-6">
       <DotCharacterB
         addClass="block w-20 vertical-action mr-14"
         style="animationDelay: 1s"
@@ -78,17 +77,17 @@ definePageMeta({
       />
     </div>
 
-    <div class="nes-container is-rounded !h-[80vh]">
+    <div class="nes-container is-rounded !h-[50vh] sm:!h-[80vh]">
       <div class="h-full w-full flex flex-col justify-center items-center">
         <p
-          class="font-numochi nes-balloon from-left nes-pointer w-1/4 animate-scale-in-center"
+          class="sm:text-base text-xs font-numochi nes-balloon from-left nes-pointer w-full sm:w-1/4 animate-scale-in-center"
           style="animationDelay: 5s"
         >
           ご回答いただきありがとうございます！<br>
           さんかきぼう については、後日 あんない いたします。
         </p>
         <DotCharacterA
-          addClass="block w-20 mr-[520px] animate-bounce-in-left"
+          addClass="block w-20 mr-[180px] sm:mr-[520px] animate-bounce-in-left"
           style="animationDelay: 4s"
         />
       </div>
