@@ -6,7 +6,7 @@ definePageMeta({
 })
 
 const goToQuestion = () => {
-  return navigateTo('/second')
+  return navigateTo('/survey-form')
 }
 </script>
 

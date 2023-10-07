@@ -7,13 +7,11 @@ definePageMeta({
 </script>
 
 <template>
-  <div class="second">
+  <div class="survey-form">
     <div class="h-[80vh]">
       <section class="nes-container with-title is-dark">
         <h2 class="title font-numochi font-semibold">しつもん</h2>
-
         <Form />
-
       </section>
     </div>
   </div>
@@ -22,7 +20,7 @@ definePageMeta({
 </template>
 
 <style scoped lang="scss">
-.second {
+.survey-form {
   position: relative;
   opacity: 0;
   animation: fadeInUp 0.8s 1s ease-in-out forwards;
