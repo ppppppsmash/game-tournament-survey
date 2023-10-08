@@ -23,7 +23,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      charset: 'utf-16',
+      charset: 'utf-8',
       viewport: 'width=device-width',
       title: 'ウェブクルー ゲーム大会',
       link: [
@@ -31,6 +31,20 @@ export default defineNuxtConfig({
           rel: 'icon',
           type: 'image/x-icon',
           href: '/favicon.ico'
+        }
+      ],
+      meta: [
+        {
+          name: 'description',
+          content: 'ゲーム大会アンケート, Created by liming.pei'
+        },
+        {
+          name: 'keywords',
+          content: 'テレビゲーム,ウェブクルーのゲーム大会'
+        },
+        {
+          name: 'og:locale',
+          content: 'ja_JP'
         }
       ],
       htmlAttrs: {
