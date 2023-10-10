@@ -77,17 +77,17 @@ definePageMeta({
       />
     </div>
 
-    <div class="nes-container is-rounded !h-[50vh] sm:!h-[80vh]">
+    <div class="nes-container is-rounded !h-[50vh] sm:!h-[60vh]">
       <div class="h-full w-full flex flex-col justify-center items-center">
         <p
-          class="sm:text-base text-xs font-numochi nes-balloon from-left nes-pointer w-full sm:w-1/4 animate-scale-in-center"
+          class="sm:text-base text-xs font-numochi nes-balloon from-left nes-pointer w-full sm:w-[300px] animate-scale-in-center"
           style="animationDelay: 5s"
         >
-          ご回答いただきありがとうございます！<br>
+          ごかいとう いただきありがとうございます！<br>
           さんかきぼう については、後日 あんない いたします。
         </p>
         <DotCharacterA
-          addClass="block w-20 mr-[180px] sm:mr-[520px] animate-bounce-in-left"
+          addClass="block w-20 sm:-ml-[300px] -ml-[200px] animate-bounce-in-left"
           style="animationDelay: 4s"
         />
       </div>
