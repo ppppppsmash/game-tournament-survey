@@ -4,7 +4,7 @@ const { addClass } = toRefs(props)
 </script>
 
 <template>
-  <div class="my-6 relative mb-20">
+  <div class="py-6 relative mb-10">
     <NuxtLink to="/">
       <h1
         class="text-xl sm:text-3xl sm:text-center title-style"
@@ -12,7 +12,7 @@ const { addClass } = toRefs(props)
       >
         
         <i class="nes-jp-logo brand" />
-        Webcrew's Gaming Tournament Survey
+        Webcrew's Gaming Survey
       </h1>
     </NuxtLink>
     <BgmCard />
@@ -23,6 +23,6 @@ const { addClass } = toRefs(props)
 .title-style {
   -webkit-text-fill-color: white;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: #212529;
 }
 </style>

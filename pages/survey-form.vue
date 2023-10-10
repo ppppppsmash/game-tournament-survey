@@ -1,14 +1,15 @@
-<script setup lang="ts">
+<script setup>
 definePageMeta({
   pageTransition: {
     name: 'expand'
-  }
+  },
+  //layout: "question"
 })
 </script>
 
 <template>
   <div class="survey-form">
-    <div class="h-[80vh]">
+    <div class="h-[80vh] overflow-x-scroll">
       <section class="nes-container with-title is-dark">
         <h2 class="title font-numochi font-semibold">しつもん</h2>
         <Form />
@@ -16,7 +17,7 @@ definePageMeta({
     </div>
   </div>
 
-  <div class="layer bg-[#212529] absolute w-full sm:h-[160vh] top-0 left-0 -z-50" />
+  <div class="layer bg-[#212529] absolute w-full h-full top-0 left-0 -z-50" />
 </template>
 
 <style scoped lang="scss">

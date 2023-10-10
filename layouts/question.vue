@@ -1,10 +1,9 @@
 <script setup lang="ts">
-
 </script>
 
 <template>
-  <div class="bg-black">
-    <main class="w-10/12 mx-auto h-[100vh]">
+  <div class="bg-[#212529]">
+    <main class="w-10/12 mx-auto">
       <Header />
       <slot />
     </main>
