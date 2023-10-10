@@ -9,7 +9,7 @@ const mutedHandler = () => {
 </script>
 
 <template>
-  <div class="absolute top-0 right-0">
+  <div class="absolute top-6 right-0">
     <div
       class="transition ease-in-out
         delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
