@@ -214,6 +214,21 @@ watchEffect(() => {
             </div>
           </span>
         </label>
+
+        <label class="block">
+          <input
+            type="checkbox"
+            class="nes-checkbox is-dark"
+            name="entry.767589273"
+            value="FIFA または ウイニングイレブン"
+            v-model="form.game_like"
+          />
+          <span class="group font-numochi font-semibold">FIFA または ウイニングイレブン
+            <div class="hidden group-hover:block">
+              <HoverCard image="/images/winningeleven.png" />
+            </div>
+          </span>
+        </label>
       </div>
 
       <div class="nes-field mt-10 mb-14">
