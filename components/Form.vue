@@ -220,10 +220,10 @@ watchEffect(() => {
             type="checkbox"
             class="nes-checkbox is-dark"
             name="entry.767589273"
-            value="ウィニングイレブン(Nintendo Switch)"
+            value="FIFA または ウイニングイレブン"
             v-model="form.game_like"
           />
-          <span class="group font-numochi font-semibold">ウィニングイレブン(Nintendo Switch)
+          <span class="group font-numochi font-semibold">FIFA または ウイニングイレブン
             <div class="hidden group-hover:block">
               <HoverCard image="/images/winningeleven.png" />
             </div>
