@@ -12,7 +12,7 @@ const { addClass } = toRefs(props)
       >
         
         <i class="nes-jp-logo brand" />
-        Webcrew's Gaming Survey
+        My Gaming Survey
       </h1>
     </NuxtLink>
     <BgmCard />

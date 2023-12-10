@@ -31,7 +31,7 @@ const submitHandler = async () => {
   formData.append('entry.50802869', form.value.game_hope_have)
 
 
-  const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeN053d_OouhoOBOyeUeQVwfzajkxm5D6lnOU8Xvi3SIMX14g/formResponse'
+  const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNspdHb5MxhuJSv2DPuudEXfNbicrpKL6pdv8gP_IMOKId1A/formResponse'
 
   const { data, pending, error, refresh } = await useAsyncData(
     'formData',
