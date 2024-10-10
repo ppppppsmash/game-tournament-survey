@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width',
-      title: 'ウェブクルー ゲーム大会',
+      title: 'KUROSAWAゲーム大会',
       link: [
         {
           rel: 'icon',
@@ -36,11 +36,11 @@ export default defineNuxtConfig({
       meta: [
         {
           name: 'description',
-          content: 'ゲーム大会アンケート, Created by liming.pei'
+          content: 'ゲーム大会アンケート, Created by kurosawa'
         },
         {
           name: 'keywords',
-          content: 'テレビゲーム,ウェブクルーのゲーム大会'
+          content: 'テレビゲーム,ゲーム大会'
         },
         {
           name: 'og:locale',
